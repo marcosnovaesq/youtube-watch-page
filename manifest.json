@@ -1,0 +1,17 @@
+{
+  "description": "Leave out only video player and title section elements in youtube watch video page",
+  "manifest_version": 1,
+  "name": "Keep Productive on Youtube",
+  "version": "1.0",
+  "homepage_url": "https://github.com/marcosnovaesq/productiveyoutube",
+  "icons": {
+    "48": "icons/coffee-icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/watch*"],
+      "js": ["ytproductive.js"]
+    }
+  ]
+}
