@@ -1,8 +1,13 @@
-document.getElementById("secondary").remove()
-document.getElementById("buttons").remove()
-document.getElementById("meta").remove()
-document.getElementById("comments").remove()
-const myNode = document.getElementById("start")
-while (myNode.lastElementChild) {
-  myNode.removeChild(myNode.lastElementChild)
-}
+setInterval(() => {
+  const elements = [
+    document.getElementById("secondary"),
+    document.getElementById("buttons"),
+    document.getElementById("meta"),
+    document.getElementById("comments"),
+  ]
+  elements.forEach((e) => {
+    if (e !== null) {
+      e.remove()
+    }
+  })
+}, 20)

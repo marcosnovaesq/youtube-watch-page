@@ -1,17 +1,32 @@
 {
-  "description": "Leave out only video player and title section elements in youtube watch video page",
-  "manifest_version": 1,
-  "name": "Keep Productive on Youtube",
-  "version": "1.0",
-  "homepage_url": "https://github.com/marcosnovaesq/youtube-watch-page",
-  "icons": {
-    "48": "icons/coffee-icon.png"
+  "manifest_version": 2,
+  "name": "Content script registration",
+  "version": "1.1",
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "content-script-example@mozilla.org",
+      "strict_min_version": "59.0a1"
+    }
   },
 
-  "content_scripts": [
-    {
-      "matches": ["*://*.youtube.com/watch*"],
-      "js": ["ytproductive.js"]
-    }
-  ]
+  "description": "Demonstration of contentScripts.register.",
+  "icons": {
+    "48": "icons/if_source_code_103710.svg"
+  },
+
+  "permissions": ["<all_urls>"],
+
+  "browser_action": {
+    "default_icon": {
+      "32": "icons/if_source_code_103710.svg"
+    },
+    "default_title": "Content script",
+    "default_popup": "popup/content-script.html",
+    "browser_style": true
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  }
 }
