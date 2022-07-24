@@ -3,7 +3,7 @@
   "manifest_version": 1,
   "name": "Keep Productive on Youtube",
   "version": "1.0",
-  "homepage_url": "https://github.com/marcosnovaesq/productiveyoutube",
+  "homepage_url": "https://github.com/marcosnovaesq/youtube-watch-page",
   "icons": {
     "48": "icons/coffee-icon.png"
   },
