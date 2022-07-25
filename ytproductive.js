@@ -10,4 +10,4 @@ setInterval(() => {
       e.remove()
     }
   })
-}, 20)
+}, 5000)
